@@ -43,3 +43,24 @@ def money_loan(lender, lendee,  money_loaned)
   lender[:monies] -= money_loaned
   lendee[:monies] += money_loaned
 end
+
+#8.
+def fav_foods(people)
+  fav_foods_array = []
+ for person in people
+   fav_foods_array += person[:favourites][:snacks]
+ end
+ return fav_foods_array
+end
+
+#9.
+
+def no_friends(people)
+ person_with_no_friends = []
+ for person in people
+   if person[:friends].length() == 0
+     person_with_no_friends.push(person[:name])
+   end
+ end
+return person_with_no_friends
+end
