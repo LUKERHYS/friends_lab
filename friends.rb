@@ -19,3 +19,6 @@ end
 end
 
 #4.
+def add_friend(person, new_friend)
+  person[:friends].push(new_friend).length()
+end
