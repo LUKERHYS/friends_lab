@@ -37,3 +37,9 @@ total = 0
   end
   return total
 end
+
+#7.
+def money_loan(lender, lendee,  money_loaned)
+  lender[:monies] -= money_loaned
+  lendee[:monies] += money_loaned
+end
