@@ -22,3 +22,9 @@ end
 def add_friend(person, new_friend)
   person[:friends].push(new_friend).length()
 end
+
+#5
+def remove_friend(person, old_friend)
+  person[:friends].delete(old_friend)
+  person[:friends].length()
+end
